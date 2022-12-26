@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023년 버킷리스트</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+        /* 구글웹폰트에서 필요한 폰트스타일 select로 담고 하단 import의 코드 복사 */
+        * {
+            font-family: 'Yeon Sung', cursive;            
+        }
+
+        /* //class명으로 지정 */
+        .title {
+            color: white;
+            background-color: tomato;
+            font-size: 24px;
+            padding: 4px 14px;
+            /* //안쪽으로 얼마나 여백을 줄것인가. 안쪽-양옆 순서 */
+            border-radius: 8px;
+        }
+
+        .bg {
+            width: 360px;
+            /* #화면크기 정하기. 가로폭값  */
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png"); 
+
+        }
+
+        .msg {
+            font-weight: bold;
+            /* 굵게 */
+        }
+
+        .bucket {
+            width: 160px;
+            height: 160px;
+            
+        }
+
+        .img1 {
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img2 {
+            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
+
+</head>
+
+<body class="bg center"> 
+    <!-- //background의 약자. link의 스타일시트에 bg center라는 클래스를 미리 만들어둠. 전부 가운데 정렬+배경모양 다듬기 -->
+    <h1 class="title">2023 신년계획</h1> 
+    <!-- //class는 이름,명찰을 붙여주는 것과 같음. h1 태그는 전체에서 제목 부분을 담당하는 태그 -->
+    <p class="msg">올해는 꼭 모두 지키자!</p> 
+    <!-- //문단을 나타냄 -->
+    <div class="row flex-row wrap"> 
+        <!-- //모든걸 묶어줄 박스. "shift+alt+f"를 누르면 알아서 정리됨. -->
+        <!-- flex-row wrap은 있는거야 없는거야.. -->
+        <div class="bucket img1 center">독립하기</div> 
+        <!-- //이미지를 퐁당퐁당 가야하기 때문에.. -->
+        <!-- link라는 스타일시트에 bucket img1,2 center라는 이미지&서식을 이미 만들어둠. 폰트가 메모지 가운데에 오도록. -->
+        <div class="bucket img2 center">ELS 수익내기</div>
+        <div class="bucket img2 center">전화영어</div>
+        <div class="bucket img1 center">운동</div>
+        <div class="bucket img1 center">체중감소</div>
+        <div class="bucket img2 center">책읽기</div>
+        <!-- 만약 완료한 목록이라면 center 뒤에 done이라고 하면 됨. -->
+    </div>
+
+
+</body>
+
+</html>
